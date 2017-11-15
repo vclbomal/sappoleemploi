@@ -1,0 +1,247 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.2.0",
+		"id": "com.sap.build.standard.newGestionDInventairePoleEmploi",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"dataSources": {
+			"main": {
+				"uri": "/here/goes/your/serviceUrl/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"ach": "ach",
+		"resources": "resources.json",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.32.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.2.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"rootView": {
+			"viewName": "generated.app.view.ReetiqueterUnBien",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.32.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			},
+			"": {
+				"dataSource": "main",
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"loadMetadataAsync": false,
+					"json": true,
+					"bJSON": true,
+					"defaultBindingMode": "TwoWay",
+					"useBatch": true,
+					"refreshAfterChange": false,
+					"disableHeadRequestForToken": true
+				}
+			}
+		},
+		"resources": {
+			"css": []
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "com.sap.build.standard.newGestionDInventairePoleEmploi.view",
+				"controlId": "App",
+				"clearTarget": false,
+				"controlAggregation": "pages",
+				"bypassed": {
+					"target": [
+						"PageDeConnexion"
+					]
+				}
+			},
+			"targets": {
+				"PageDeConnexion": {
+					"controlAggregation": "pages",
+					"viewName": "PageDeConnexion",
+					"viewId": "PageDeConnexion",
+					"viewLevel": 1,
+					"transition": "slide"
+				},
+				"Accueil": {
+					"controlAggregation": "pages",
+					"viewName": "Accueil",
+					"viewId": "Accueil",
+					"viewLevel": 1,
+					"transition": "fade"
+				},
+				"InventaireBureau5005": {
+					"controlAggregation": "pages",
+					"viewName": "InventaireBureau5005",
+					"viewId": "InventaireBureau5005",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"ListeDesChaisesScannes": {
+					"controlAggregation": "pages",
+					"viewName": "ListeDesChaisesScannes",
+					"viewId": "ListeDesChaisesScannes",
+					"viewLevel": 1,
+					"transition": "fade"
+				},
+				"Bilan": {
+					"controlAggregation": "pages",
+					"viewName": "Bilan",
+					"viewId": "Bilan",
+					"viewLevel": 1,
+					"transition": "fade"
+				},
+				"CreerUnBien1": {
+					"controlAggregation": "pages",
+					"viewName": "CreerUnBien1",
+					"viewId": "CreerUnBien1",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"CreerUnBien2": {
+					"controlAggregation": "pages",
+					"viewName": "CreerUnBien2",
+					"viewId": "CreerUnBien2",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"ScannerUnBien": {
+					"controlAggregation": "pages",
+					"viewName": "ScannerUnBien",
+					"viewId": "ScannerUnBien",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"ReetiqueterUnBien": {
+					"controlAggregation": "pages",
+					"viewName": "ReetiqueterUnBien",
+					"viewId": "ReetiqueterUnBien",
+					"viewLevel": 1,
+					"transition": "show"
+				}
+			},
+			"routes": [
+				{
+					"pattern": "PageDeConnexion/:context:",
+					"name": "PageDeConnexion",
+					"target": [
+						"PageDeConnexion"
+					]
+				},
+				{
+					"pattern": "",
+					"name": "default",
+					"target": [
+						"PageDeConnexion"
+					]
+				},
+				{
+					"pattern": "Bilan/:context:",
+					"name": "Bilan",
+					"target": [
+						"Bilan"
+					]
+				},
+				{
+					"pattern": "Accueil/:context:",
+					"name": "Accueil",
+					"target": [
+						"Accueil"
+					]
+				},
+				{
+					"pattern": "InventaireBureau5005/:context:",
+					"name": "InventaireBureau5005",
+					"target": [
+						"InventaireBureau5005"
+					]
+				},
+				{
+					"pattern": "ListeDesChaisesScannes/:context:",
+					"name": "ListeDesChaisesScannes",
+					"target": [
+						"ListeDesChaisesScannes"
+					]
+				},
+				{
+					"pattern": "CreerUnBien1/:context:",
+					"name": "CreerUnBien1",
+					"target": [
+						"CreerUnBien1"
+					]
+				},
+				{
+					"pattern": "CreerUnBien2/:context:",
+					"name": "CreerUnBien2",
+					"target": [
+						"CreerUnBien2"
+					]
+				},
+				{
+					"pattern": "ScannerUnBien/:context:",
+					"name": "ScannerUnBien",
+					"target": [
+						"ScannerUnBien"
+					]
+				},
+				{
+					"pattern": "ReetiqueterUnBien/:context:",
+					"name": "ReetiqueterUnBien",
+					"target": [
+						"ReetiqueterUnBien"
+					]
+				}
+			]
+		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
+	}
+}

@@ -1,0 +1,27 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.newGestionDInventairePoleEmploi.controller.Popover6" xmlns:m="sap.m" xmlns:core="sap.ui.core">
+    <m:Popover bounce="false" contentHeight="350px" contentWidth="250px" horizontalScrolling="true" modal="false" offsetX="0" offsetY="0" placement="Right" showHeader="true" title="Choisir un type de bien" verticalScrolling="true" visible="true">
+        <m:content>
+            <m:Text text="Famille de bien" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+            <m:ComboBox value="" placeholder="Famille de bien" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                <m:items>
+                    <core:Item text="Ordinateur" enabled="true"/>
+                    <core:Item text="Chaise" enabled="true"/>
+                    <core:Item text="Table" enabled="true"/>
+                </m:items>
+            </m:ComboBox>
+            <m:Text text="Type de bien" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+            <m:ComboBox value="" placeholder="Type de bien" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                <m:items>
+                    <core:Item text="Chaise bleue à roulettes" enabled="true"/>
+                    <core:Item text="Chaise bleue à pieds" enabled="true"/>
+                    <core:Item text="Chaise noire" enabled="true"/>
+                </m:items>
+            </m:ComboBox>
+        </m:content>
+        <m:beginButton/>
+        <m:customHeader/>
+        <m:endButton/>
+        <m:footer/>
+        <m:subHeader/>
+    </m:Popover>
+</mvc:View>

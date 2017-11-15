@@ -1,0 +1,15 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.newGestionDInventairePoleEmploi.controller.Dialog3" xmlns:m="sap.m">
+    <m:Dialog horizontalScrolling="true" showHeader="true" state="None" stretch="false" title="Confirmer" type="Standard" verticalScrolling="true">
+        <m:content>
+            <m:Text text="Veuillez confirmer que le bien est inutilisable" width="auto" maxLines="2" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+        </m:content>
+        <m:beginButton/>
+        <m:buttons>
+            <m:Button text="Confirmer" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress9"/>
+            <m:Button text="Annuler" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress10"/>
+        </m:buttons>
+        <m:customHeader/>
+        <m:endButton/>
+        <m:subHeader/>
+    </m:Dialog>
+</mvc:View>

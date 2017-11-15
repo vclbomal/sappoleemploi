@@ -1,0 +1,69 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.newGestionDInventairePoleEmploi.controller.Accueil" xmlns:m="sap.m" xmlns:layout="sap.ui.layout" xmlns:core="sap.ui.core">
+    <m:Page showHeader="true" title="Accueil" showFooter="true" showNavButton="false">
+        <m:content>
+            <layout:BlockLayout>
+                <layout:content>
+                    <layout:BlockLayoutRow scrollable="false">
+                        <layout:content>
+                            <layout:BlockLayoutCell title="" titleAlignment="Center" titleLevel="Auto" width="2">
+                                <layout:content>
+                                    <m:Text text="Bienvenue James sur le site de" width="auto" maxLines="2" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Link href="" text="Montreuil" textAlign="Center" width="100%" target="_self" wrapping="true" enabled="true" visible="true" emphasized="false" subtle="false" press="_onLinkPress"/>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                        </layout:content>
+                    </layout:BlockLayoutRow>
+                    <layout:BlockLayoutRow scrollable="false">
+                        <layout:content>
+                            <layout:BlockLayoutCell title="" titleAlignment="Begin" titleLevel="Auto" width="0">
+                                <layout:content>
+                                    <m:Text text="Cellules à inventorier :" width="249.00000000px" maxLines="1" wrapping="false" textAlign="Left" textDirection="Inherit"/>
+                                    <m:SearchField value="" placeholder="Rechercher une cellule" showSearchButton="true" visible="true" width="auto"/>
+                                    <m:ObjectListItem intro="" title="Bureau 5005" number="23" numberUnit="" numberState="Error" type="Active" selected="false" showMarkers="false" press="_onObjectListItemPress">
+                                        <m:attributes/>
+                                        <m:firstStatus/>
+                                        <m:secondStatus/>
+                                    </m:ObjectListItem>
+                                    <m:ObjectListItem intro="" title="Bureau 5007" number="16" numberUnit="" numberState="Error" type="Active" selected="false" showMarkers="false">
+                                        <m:attributes/>
+                                        <m:firstStatus/>
+                                        <m:secondStatus/>
+                                    </m:ObjectListItem>
+                                    <m:ObjectListItem intro="" title="Rdc" number="52" numberUnit="" numberState="Success" type="Active" selected="false" showMarkers="false">
+                                        <m:attributes/>
+                                        <m:firstStatus/>
+                                        <m:secondStatus/>
+                                    </m:ObjectListItem>
+                                    <m:ObjectListItem intro="" title="Etage 1" number="41" numberUnit="" numberState="Success" type="Active" selected="false" showMarkers="false">
+                                        <m:attributes/>
+                                        <m:firstStatus/>
+                                        <m:secondStatus/>
+                                    </m:ObjectListItem>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                        </layout:content>
+                    </layout:BlockLayoutRow>
+                </layout:content>
+            </layout:BlockLayout>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Auto">
+                <m:contentLeft>
+                    <m:Button text="Evaluer" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress5"/>
+                </m:contentLeft>
+                <m:contentMiddle>
+                    <m:Button text="Clôturer l'inventaire" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </m:contentMiddle>
+                <m:contentRight>
+                    <m:Button text="Bilan" type="Default" iconFirst="false" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress6"/>
+                </m:contentRight>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent>
+            <m:Text text="En ligne" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+            <core:Icon src="sap-icon://circle-task-2" size="20px" color="green" height="48px" width="48px" visible="true"/>
+        </m:headerContent>
+        <m:subHeader/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>

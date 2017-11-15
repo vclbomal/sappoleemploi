@@ -1,0 +1,30 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.newGestionDInventairePoleEmploi.controller.Popover8" xmlns:m="sap.m" xmlns:layout="sap.ui.layout">
+    <m:Popover bounce="false" contentHeight="auto" contentWidth="100%" horizontalScrolling="true" modal="true" offsetX="0" offsetY="0" placement="Auto" showHeader="true" title="Notation de l'application" verticalScrolling="true" visible="true">
+        <m:content>
+            <layout:BlockLayoutRow scrollable="false">
+                <layout:content>
+                    <layout:BlockLayoutCell title="" titleAlignment="Begin" titleLevel="Auto" width="0">
+                        <layout:content>
+                            <m:RatingIndicator value="0" maxValue="5" visualMode="Half" enabled="true" visible="true"/>
+                        </layout:content>
+                    </layout:BlockLayoutCell>
+                    <layout:BlockLayoutCell title="Commentaire :" titleAlignment="Begin" titleLevel="Auto" width="0">
+                        <layout:content>
+                            <m:TextArea value="" rows="2" placeholder="Votre commentaire..." cols="20" maxLength="0" wrapping="None" visible="true"/>
+                        </layout:content>
+                    </layout:BlockLayoutCell>
+                    <layout:BlockLayoutCell title="" titleAlignment="Right" titleLevel="Auto" width="0">
+                        <layout:content>
+                            <m:Button text="Valider" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress1"/>
+                        </layout:content>
+                    </layout:BlockLayoutCell>
+                </layout:content>
+            </layout:BlockLayoutRow>
+        </m:content>
+        <m:beginButton/>
+        <m:customHeader/>
+        <m:endButton/>
+        <m:footer/>
+        <m:subHeader/>
+    </m:Popover>
+</mvc:View>

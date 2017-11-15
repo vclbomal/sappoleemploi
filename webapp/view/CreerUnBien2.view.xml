@@ -1,0 +1,65 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.newGestionDInventairePoleEmploi.controller.CreerUnBien2" xmlns:m="sap.m" xmlns:layout="sap.ui.layout" xmlns:core="sap.ui.core">
+    <m:Page showHeader="true" title="Créer un bien" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress2">
+        <m:content>
+            <layout:BlockLayout>
+                <layout:content>
+                    <layout:BlockLayoutRow scrollable="false">
+                        <layout:content>
+                            <layout:BlockLayoutCell title="" titleAlignment="Center" titleLevel="Auto" width="1">
+                                <layout:content>
+                                    <m:Text text="Choix du type de bien" width="auto" maxLines="1" wrapping="false" textAlign="Center" textDirection="Inherit"/>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                            <layout:BlockLayoutCell title="" titleAlignment="Center" titleLevel="Auto" width="2">
+                                <layout:content>
+                                    <m:ComboBox placeholder="Type de bien" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                        <m:items>
+                                            <core:Item text="Chaise à roulettes bleues" enabled="true"/>
+                                            <core:Item text="Chaise à pieds bleues" enabled="true"/>
+                                            <core:Item text="Chaise verte" enabled="true"/>
+                                            <core:Item text="Chaise rouge" enabled="true"/>
+                                        </m:items>
+                                    </m:ComboBox>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                            <layout:BlockLayoutCell title="" titleAlignment="Center" titleLevel="Auto" width="1">
+                                <layout:content>
+                                    <m:Text text="Informations descriptives" width="auto" maxLines="1" wrapping="false" textAlign="Center" textDirection="Inherit"/>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                            <layout:BlockLayoutCell title="" titleAlignment="Center" titleLevel="Auto" width="2">
+                                <layout:content>
+                                    <m:Label text="N° de Série" design="Standard" width="80px" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Input placeholder="N° de série" type="Text" showValueHelp="false" enabled="true" visible="true" width="137.00000000px" valueHelpOnly="false" maxLength="0"/>
+                                    <core:Icon src="sap-icon://camera" size="25px" height="40px" width="35px" visible="true"/>
+                                    <m:Label text="Longueur" design="Standard" width="80px" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Input placeholder="Longueur" type="Number" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>
+                                    <m:Label text="Largeur" design="Standard" width="80px" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Input placeholder="Largeur" type="Number" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>
+                                    <m:Label text="Couleur" design="Standard" width="80px" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Input placeholder="Couleur" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                        </layout:content>
+                    </layout:BlockLayoutRow>
+                </layout:content>
+            </layout:BlockLayout>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Auto">
+                <m:contentLeft>
+                    <m:Button text="" type="Transparent" icon="sap-icon://add" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress12"/>
+                </m:contentLeft>
+                <m:contentMiddle>
+                    <core:Icon src="sap-icon://bar-code" size="48px" height="48px" width="48px" visible="true"/>
+                </m:contentMiddle>
+                <m:contentRight>
+                    <m:Button text="Valider" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress13"/>
+                </m:contentRight>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:subHeader/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>

@@ -1,0 +1,80 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.newGestionDInventairePoleEmploi.controller.InventaireBureau5005" xmlns:m="sap.m" xmlns:layout="sap.ui.layout" xmlns:core="sap.ui.core">
+    <m:Page showHeader="true" title="Inventaire Bureau 5005" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">
+        <m:content>
+            <layout:BlockLayout>
+                <layout:content>
+                    <layout:BlockLayoutRow scrollable="false">
+                        <layout:content>
+                            <layout:BlockLayoutCell title="" titleAlignment="Center" titleLevel="Auto" width="2">
+                                <layout:content>
+                                    <m:Text text="Récapitulatif" width="auto" maxLines="1" wrapping="false" textAlign="Center" textDirection="Inherit"/>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                            <layout:BlockLayoutCell title="" titleAlignment="Begin" titleLevel="Auto" width="0">
+                                <layout:content>
+                                    <m:Text text="Prévus : 18" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:ToolbarSpacer/>
+                                    <m:Text text="" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Text text="Constatés : 19" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                            <layout:BlockLayoutCell title="" titleAlignment="End" titleLevel="Auto" width="0">
+                                <layout:content>
+                                    <m:Image src="/webapp/resources/relocaliser_picto.png" height="30px" width="30px" densityAware="false"/>
+                                    <m:Text text="1" width="25px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Image src="/webapp/resources/picto_plus.png" height="30px" width="30px" densityAware="false"/>
+                                    <m:Text text="1" width="auto" maxLines="1" wrapping="false" textAlign="End" textDirection="Inherit"/>
+                                    <m:Image src="/webapp/resources/code_barre_plus_1_.png" height="40px" width="80px" densityAware="false"/>
+                                    <m:Text text="3" width="15px" maxLines="1" wrapping="false" textAlign="Center" textDirection="Inherit"/>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                        </layout:content>
+                    </layout:BlockLayoutRow>
+                    <layout:BlockLayoutRow scrollable="false">
+                        <layout:content>
+                            <layout:BlockLayoutCell title="" titleAlignment="Center" titleLevel="Auto" width="0">
+                                <layout:content>
+                                    <m:Text text="Biens inventoriés" width="auto" maxLines="1" wrapping="false" textAlign="Center" textDirection="Inherit"/>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                            <layout:BlockLayoutCell title="" titleAlignment="Center" titleLevel="Auto" width="0">
+                                <layout:content>
+                                    <m:Image src="/webapp/resources/Capture_d_e_cran_2017-11-13_a__12.46.11.png" height="64px" width="60px" densityAware="false" press="_onImagePress"/>
+                                    <m:Text text="10" width="20px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Image src="/webapp/resources/Capture_d_e_cran_2017-11-13_a__12.46.24.png" height="64px" width="39px" densityAware="false"/>
+                                    <m:Text text="2" width="20px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Image src="/webapp/resources/Capture_d_e_cran_2017-11-13_a__12.46.31.png" height="53px" width="60px" densityAware="false"/>
+                                    <m:Text text="1" width="10px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                        </layout:content>
+                    </layout:BlockLayoutRow>
+                </layout:content>
+            </layout:BlockLayout>
+            <layout:BlockLayoutCell title="" titleAlignment="Center" titleLevel="Auto" width="0">
+                <layout:content>
+                    <m:Image src="/webapp/resources/VPL-DX122.jpg" height="60px" width="60px" densityAware="false"/>
+                    <m:Text text="1" width="20px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                    <m:Image src="/webapp/resources/table.jpg" height="60px" width="80px" densityAware="false"/>
+                    <m:Text text="4" width="20px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+                </layout:content>
+            </layout:BlockLayoutCell>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Auto">
+                <m:contentLeft>
+                    <m:Button text="" type="Default" icon="sap-icon://add" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress7"/>
+                </m:contentLeft>
+                <m:contentMiddle>
+                    <core:Icon src="sap-icon://bar-code" size="48px" height="48px" width="48px" visible="true" press="_onIconPress"/>
+                </m:contentMiddle>
+                <m:contentRight>
+                    <m:Button text="Valider" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress8"/>
+                </m:contentRight>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:subHeader/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>

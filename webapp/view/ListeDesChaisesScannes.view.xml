@@ -1,0 +1,33 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.newGestionDInventairePoleEmploi.controller.ListeDesChaisesScannes" xmlns:m="sap.m" xmlns:layout="sap.ui.layout">
+    <m:Page showHeader="true" title="Liste des chaises scannées" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress1">
+        <m:content>
+            <layout:BlockLayout>
+                <layout:content>
+                    <layout:BlockLayoutRow scrollable="false">
+                        <layout:content>
+                            <layout:BlockLayoutCell title="" titleAlignment="Begin" titleLevel="Auto" width="0">
+                                <layout:content>
+                                    <m:Text text="Chaises scannées :" width="249.00000000px" maxLines="1" wrapping="false" textAlign="Left" textDirection="Inherit"/>
+                                    <m:ObjectListItem intro="" title="Chaises bleues à pieds" number="6" numberUnit="" numberState="None" type="Active" selected="false" showMarkers="false">
+                                        <m:attributes/>
+                                        <m:firstStatus/>
+                                        <m:secondStatus/>
+                                    </m:ObjectListItem>
+                                    <m:ObjectListItem intro="" title="Chaises noires" number="4" numberUnit="" numberState="None" type="Active" selected="false" showMarkers="false">
+                                        <m:attributes/>
+                                        <m:firstStatus/>
+                                        <m:secondStatus/>
+                                    </m:ObjectListItem>
+                                </layout:content>
+                            </layout:BlockLayoutCell>
+                        </layout:content>
+                    </layout:BlockLayoutRow>
+                </layout:content>
+            </layout:BlockLayout>
+        </m:content>
+        <m:footer/>
+        <m:headerContent/>
+        <m:subHeader/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>
