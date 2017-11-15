@@ -8,7 +8,7 @@
                             <layout:BlockLayoutCell title="" titleAlignment="Center" titleLevel="Auto" width="2">
                                 <layout:content>
                                     <m:Text text="Bienvenue James sur le site de" width="auto" maxLines="2" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
-                                    <m:Link href="" text="Montreuil" textAlign="Center" width="100%" target="_self" wrapping="true" enabled="true" visible="true" emphasized="false" subtle="false" press="_onLinkPress"/>
+                                    <m:Link href="" text="Montreuil Zoo" textAlign="Center" width="100%" target="_self" wrapping="true" enabled="true" visible="true" emphasized="false" subtle="false" press="_onLinkPress"/>
                                 </layout:content>
                             </layout:BlockLayoutCell>
                         </layout:content>
